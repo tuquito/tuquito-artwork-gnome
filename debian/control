@@ -1,0 +1,12 @@
+Source: tuquito-artwork-gnome
+Section: admin
+Priority: optional
+Maintainer: Mario Colque <mario@tuquito.org.ar>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: tuquito-artwork-gnome
+Architecture: all
+Depends: tuquito-artwork-common, gtk2-engines-clearlooks, gtk2-engines-murrine, gtk2-engines-pixbuf, tuquito-x-icons, tuquito-x-theme
+Description: Default artwork for Tuquito
+ Default artwork for Tuquito

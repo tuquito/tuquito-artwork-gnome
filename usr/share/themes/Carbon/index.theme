@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Carbon
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Carbon
+MetacityTheme=Carbon
+IconTheme=Felicia
