@@ -20,9 +20,14 @@ case "$1" in
     configure)
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/background/picture_filename /usr/share/backgrounds/tuquito/Tuquito5.png
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/background/picture_options "zoom"
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/interface/gtk_theme Tuquito-X-Metal
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/interface/icon_theme Tuquito-X
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/metacity/general/theme Tuquito-X
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/interface/gtk_theme Shiki-Brave
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/interface/icon_theme gnome-brave
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /desktop/gnome/interface/menus_have_icons true
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set 	/desktop/gnome/interface/buttons_have_icons true
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/interface/document_font_name "Ubuntu 10"
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/interface/font_name "Ubuntu 10"
+
+	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/metacity/general/theme Shiki-Colors-Metacity
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/sound/theme_name Tuquito
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/notification-daemon/theme standard
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-session/options/splash_image splash/tuquito.png
@@ -40,22 +45,16 @@ case "$1" in
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/metacity/general/button_layout "menu:minimize,maximize,close"
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/metacity/global_keybindings/run_command_9 "<Control><Alt>Delete"
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/metacity/keybinding_commands/command_9 "gnm-sstm-mntr"
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type boolean --set /apps/nautilus/desktop/computer_icon_visible true
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type boolean --set /apps/nautilus/desktop/home_icon_visible true
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type boolean --set /apps/nautilus/desktop/volumes_visible true
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /apps/nautilus/preferences/enable_delete true
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/url-handlers/mailto/command "thunderbird %s"
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /apps/gedit-2/preferences/editor/save/create_backup_copy false
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /desktop/gnome/interface/menus_have_icons true
-	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set 	/desktop/gnome/interface/buttons_have_icons true
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/background/picture_options "zoom"
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/metacity/general/button_layout "menu:minimize,maximize,close"
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/nautilus/preferences/background_color "#FFFFFF"
 	gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /apps/nautilus/preferences/background_set true
 
 	sudo -u gdm gconftool-2 --set --type string --set /desktop/gnome/background/picture_filename /usr/share/backgrounds/tuquito/Tuquito5.png
-	sudo -u gdm gconftool-2 --set --type string --set /desktop/gnome/interface/gtk_theme Tuquito-X
-	sudo -u gdm gconftool-2 --set --type string --set /desktop/gnome/interface/icon_theme Tuquito-X
+	sudo -u gdm gconftool-2 --set --type string --set /desktop/gnome/interface/gtk_theme Shiki-Brave
+	sudo -u gdm gconftool-2 --set --type string --set /desktop/gnome/interface/icon_theme gnome-brave
 
     ;;
 

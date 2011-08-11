@@ -7,6 +7,6 @@ Standards-Version: 3.7.2
 
 Package: tuquito-artwork-gnome
 Architecture: all
-Depends: tuquito-artwork-common, gtk2-engines-clearlooks, gtk2-engines-murrine, gtk2-engines-pixbuf, tuquito-x-icons, tuquito-x-theme
+Depends: tuquito-artwork-common, gtk2-engines-clearlooks, gtk2-engines-murrine, gtk2-engines-pixbuf, gnome-brave-icon-theme, shiki-brave-theme
 Description: Default artwork for Tuquito
  Default artwork for Tuquito

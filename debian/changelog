@@ -1,3 +1,9 @@
+tuquito-artwork-gnome (1.0.2) natty; urgency=low
+
+  * new depends
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 10 Aug 2011 22:35:16 -0300
+
 tuquito-artwork-gnome (1.0.1) natty; urgency=low
 
   * Pampa artwork
