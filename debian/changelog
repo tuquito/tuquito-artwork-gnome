@@ -1,3 +1,9 @@
+tuquito-artwork-gnome (1.0.3) natty; urgency=low
+
+  * postinst fixed
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 12 Aug 2011 19:13:05 -0300
+
 tuquito-artwork-gnome (1.0.2) natty; urgency=low
 
   * new depends
