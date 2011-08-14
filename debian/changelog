@@ -1,3 +1,9 @@
+tuquito-artwork-gnome (1.0.4) natty; urgency=low
+
+  * new gconf configs
+
+ -- Mario Colque <mario@tuquito.org.ar>  Sat, 13 Aug 2011 21:10:26 -0300
+
 tuquito-artwork-gnome (1.0.3) natty; urgency=low
 
   * postinst fixed
