@@ -1,0 +1,76 @@
+/* Victory (Strikes Again) Adwaita based theme by Darin */
+
+RBDisplayPageTree .cell >,
+TotemPlaylist GtkTreeView >,
+NautilusPlacesSidebar .cell >,
+FMTreeView .cell >,
+GtkFileChooserDefault .sidebar.view >,
+FrWindow GtkTable GtkVBox GtkScrolledWindow GtkTreeView >
+{
+background-image: -gtk-gradient (linear,
+				     left top, right top,
+				     from (shade (@selected_bg_color, 0.95)),
+                                     color-stop (0.20, shade (@selected_bg_color, 1.05)),
+                                     color-stop (0.50, shade (@selected_bg_color, 1.1)),
+				     to (shade (@selected_bg_color, 1.2));
+color: @selected_fg_color;
+}
+
+NautilusWindow .sidebar
+{
+border-width: 0;
+padding:0;
+}
+
+RBDisplayPageTree .cell:hover,
+TotemPlaylist .cell:hover,
+NautilusPlacesSidebar .cell:hover,
+FMTreeView .cell:hover,
+GtkFileChooserDefault .sidebar.view:hover,
+FrWindow GtkTable GtkVBox GtkScrolledWindow GtkTreeView:hover
+{
+    color: @selected_fg_color;
+}
+
+
+RBDisplayPageTree row:selected,
+RBDisplayPageTree row:selected:focused,
+TotemPlaylist row:selected,
+TotemPlaylist row:selected:focused,
+NautilusPlacesSidebar row:selected,
+NautilusPlacesSidebar row:selected:focused,
+FMTreeView row:selected,
+FMTreeView row:selected:focused,
+GtkFileChooserDefault .sidebar.view:selected,
+GtkFileChooserDefault .sidebar.view:selected:focused,
+FrWindow GtkTable GtkVBox GtkScrolledWindow GtkTreeView:selected,
+FrWindow GtkTable GtkVBox GtkScrolledWindow GtkTreeView:selected:focused
+{
+background-image: -gtk-gradient (linear,
+				     left top, right top,
+				     from (shade (@selected_bg_color, 0.97)),
+                                     color-stop (0.15, shade (@selected_bg_color, 0.99)),
+                                     color-stop (0.50, shade (@selected_bg_color, 1.05)),
+				     to (shade (@selected_bg_color, 1.2));
+}
+
+
+RBDisplayPageTree GtkTreeView row:selected,
+RBDisplayPageTree GtkTreeView row:selected:focused
+{
+background-color: shade (@bg_color, 0.82);
+}
+
+NautilusWindow > GtkTable > .pane-separator:hover
+{
+background-color:shade (@selected_bg_color, 1.2);
+color: @selected_fg_color;
+}
+
+GtkFileChooserDefault .sidebar.separator,
+GtkFileChooserDefault .sidebar.separator:hover,
+FrWindow GtkTable GtkVBox GtkScrolledWindow GtkTreeView expander:active
+{
+background-color: alpha (@selected_bg_color, 0.0);
+border-color: green;
+}

@@ -1,3 +1,10 @@
+tuquito-artwork-gnome (1.0.5) natty; urgency=low
+
+  * new icons
+  * new themes
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 15 Aug 2011 23:51:28 -0300
+
 tuquito-artwork-gnome (1.0.4) natty; urgency=low
 
   * new gconf configs
